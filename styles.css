@@ -27,8 +27,8 @@ header {
 
 /* Profile Picture */
 .profile-pic {
-    width: 160px;
-    height: 160px; /* Ensuring a perfect circle */
+    width: 180px;
+    height: 200px; /* Ensuring a perfect circle */
     border-radius: 50%;
     border: 5px solid white;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
