@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Section */
+header {
+    background: linear-gradient(to right, #3a7bd5, #3a6073); /* Softer blue gradient */
+    color: white;
+    padding: 50px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Profile Container */
+.profile-container {
+    display: flex;
+    align-items: center;
+    max-width: 800px;
+    width: 100%;
+    gap: 100px;
+}
+
+/* Profile Picture */
+.profile-pic {
+    width: 160px;
+    height: 160px; /* Ensuring a perfect circle */
+    border-radius: 50%;
+    border: 5px solid white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin-right: 20px;
+    object-fit: cover; /* Prevents image distortion */
+}
+
+/* Profile Details */
+.profile-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-details h1 {
+    margin: 0;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.profile-details p {
+    margin: 10px 0 0;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+/* Sections Styling */
+.about, .Skills, .contact {
+    max-width: 80%;
+    margin: 40px auto;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h2 {
+    border-bottom: 3px solid #2575fc;
+    padding-bottom: 5px;
+}
+
+/* Project Section */
+.project {
+    background: #f0f0f0;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px 0;
+    min-height: 100px;
+    border-left: 5px solid #3a7bd5; /* Ensuring equal heights */
+}
+
+/* Contact Section */
+.contact {
+    text-align: center; /* Centering the contact details */
+}
+
+/* Contact Links */
+.contact a {
+    color: #3a7bd5;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth transition */
+}
+
+.contact a:hover {
+    text-decoration: underline;
+    color: #2c5ea0; /* Hover effect */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+    .profile-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-pic {
+        margin: 0 auto 20px;
+    }
+}
